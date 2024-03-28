@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.19-pr16">
+
+    
+  <!-- Spot Style - nameright -->
+
+
+  <style name="Iconnameright"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint0.png"
+         visible="false"
+         edge="center"
+         zoom="true"
+
+         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
+         onhover="onhoverIconnameright"
+         onout="onoutIconnameright"
+
+
+         />
+  <action name="onhoverIconnameright">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconnameright">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+  
+  <!-- Spot Style - Area -->
+  <style name="PolygonArea"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xffffff"
+           borderwidth="4"
+           borderalpha="1"
+           fillalpha="0.50000762951094835"
+           capture="false"
+           onhover="onhoverPolygonArea"
+           onover="onoverPolygonArea"
+           onout="onoutPolygonArea"
+           />
+  <action name="onhoverPolygonArea">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonArea">
+    set(borderwidth, 4);
+  </action>
+
+  <action name="onoutPolygonArea">
+
+    set(borderwidth, 4);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - nameleftlow -->
+
+
+  <style name="Iconnameleftlow"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint1.png"
+         visible="false"
+         edge="bottom" ox="0" oy="0"
+         zoom="true"
+
+         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
+         onhover="onhoverIconnameleftlow"
+         onout="onoutIconnameleftlow"
+
+
+         />
+  <action name="onhoverIconnameleftlow">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconnameleftlow">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - imageicon -->
+
+
+  <style name="Iconimageicon"
+         url="%FIRSTXML%/spots/pointercamera_user_defaultpoint2.png"
+         visible="false"
+         edge="bottom" ox="0" oy="0"
+         alpha="0.8"
+         onhover="onhoverIconimageicon"
+         onover="onoverIconimageicon"
+         onout="onoutIconimageicon"
+
+
+         width="40"
+         height="prop"
+         />
+  <action name="onhoverIconimageicon">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconimageicon">
+
+tween(alpha, 1);
+pauseautorotation(forcehotspot);
+
+  </action>
+  <action name="onoutIconimageicon">
+    hideTooltip();
+
+    tween(alpha, 0.8);
+resumeautorotation(forcehotspot);
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - namerightlow -->
+
+
+  <style name="Iconnamerightlow"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint3.png"
+         visible="false"
+         edge="center"
+         zoom="true"
+
+         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
+         onhover="onhoverIconnamerightlow"
+         onout="onoutIconnamerightlow"
+
+
+         />
+  <action name="onhoverIconnamerightlow">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconnamerightlow">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - namerighthigh -->
+
+
+  <style name="Iconnamerighthigh"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint4.png"
+         visible="false"
+         edge="center"
+         zoom="true"
+
+         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
+         onhover="onhoverIconnamerighthigh"
+         onout="onoutIconnamerighthigh"
+
+
+         />
+  <action name="onhoverIconnamerighthigh">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconnamerighthigh">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - nameleft -->
+
+
+  <style name="Iconnameleft"
+         url="%FIRSTXML%/spots/hotspot_neutral_user_defaultpoint5.png"
+         visible="false"
+         edge="center"
+         zoom="true"
+
+         onloaded="if(scene[get(xml.scene)].planar,if(zoom,set(zoom, false);););"
+         onhover="onhoverIconnameleft"
+         onout="onoutIconnameleft"
+
+
+         />
+  <action name="onhoverIconnameleft">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconnameleft">
+    hideTooltip();
+
+
+
+  </action>
+
+
+ <!-- 360Images Call Out Titles Plugin -->        <include url="%FIRSTXML%/graphics/callouttitles.xml"/>  <callout author_context="true"/> <style distancepopup="2" distancepopup.tablet="3" distancepopup.mobile="5" visible="false" callout_type="centerscreen" callout_type.mobile="centerscreen" callout_type.tablet="centerscreen" name="namerighthigh" type="container" width="10" height="10"  bgroundedge="10"  bgcolor="0xb62925" bgalpha="1.00" bgborder="2 0xffffff 1.00" toheight="80" pumpitup="true" pumpitup.mobile="true" pumpitup.tablet="true"  rotate="0"   minfov="180" maxfov="1" minfov.mobile="180" maxfov.mobile="1" minfov.tablet="180" maxfov.tablet="1" onloaded=" txtadd(parentspot,'hotspot[',get(name),']');  txtadd(callout_pulse,'callout_pulse_',get(name)); addlayer(get(callout_pulse)); layer[get(callout_pulse)].loadstyle(call_out_titles3callout_pulse); copy(layer[get(callout_pulse)].parent,parentspot);   txtadd(callout_line,'callout_line_',get(name)); addlayer(get(callout_line)); copy(hotspot[get(name)].callout_line,callout_line); layer[get(callout_line)].loadstyle(call_out_titles3callout_line); copy(layer[get(callout_line)].parent,parentspot); copy(layer[get(callout_line)].x,xpoint); copy(layer[get(callout_line)].y,ypoint);  txtadd(callout_line_vertical,'callout_line_vertical_',get(name)); addlayer(get(callout_line_vertical)); copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical); layer[get(callout_line_vertical)].loadstyle(call_out_titles3callout_line_vertical); txtadd(parentlayer,'layer[',get(callout_line),']'); copy(layer[get(callout_line_vertical)].parent,parentlayer); txtadd(callout_title,'callout_title_',get(name)); addlayer(get(callout_title)); copy(hotspot[get(name)].callout_title,callout_title); layer[get(callout_title)].loadstyle(call_out_titles3callout_title); txtadd(parentlayer2,'layer[',get(callout_line_vertical),']'); copy(layer[get(callout_title)].parent,parentlayer2); getmessage(montitre, get(tooltip)); copy(layer[get(callout_title)].html,montitre);  txtadd(callout_desc,'callout_desc_',get(name)); addlayer(get(callout_desc)); copy(hotspot[get(name)].callout_desc,callout_desc); layer[get(callout_desc)].loadstyle(call_out_titles3callout_desc); copy(layer[get(callout_desc)].parent,callout_title); getmessage(madesc, get(descriptionid)); copy(layer[get(callout_desc)].html,madesc);  if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true)); if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true)); if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true)); set(events[testshotspots].onviewchanged,testhotspots();) "  oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));" oncallin="animate_callin(get(callout_line), get(callout_line_vertical));" /> <style name="call_out_titles3callout_line" type="container" width="2" height="0" bgalpha="1" bgcolor="0xffffff" align="top" edge="bottom" /> <style name="call_out_titles3callout_line_vertical" type="container" width="0" height="0" bgcolor="0xffffff"   rotate="-0"   bgborder="0,0,0,2 0xffffff"        edge="bottomleft" align="topright"        maskchildren="true" /> <style name="call_out_titles3callout_title" type="text" enabled="false"  align="topleft" ox="10"    roundedge="3"   bg="true" bgcolor="0xffffff" bgalpha="1"   bgborder="false"   css="color:#b62925;font-family:Futura;font-size:10px;text-align:left;"  padding="10 10" /> <style name="call_out_titles3callout_desc" type="text" enabled="false"  align="bottomleft" edge="topleft"     bg="false"   bgborder="false"      textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"  css="color:#ffffff;font-family:Futura;font-size:9px;text-align:left;"  padding="5 15" /> <style name="call_out_titles3callout_pulse" type="container" align="center" bg="false" bgborder="3 0xffffff 1.00"  bgroundedge="calc:10 * 2"  width="10" height="10" onloaded="pulse(get(name))"/>  <!-- 360Images Call Out Titles Plugin -->      <callout author_context="true"/> <style distancepopup="2" distancepopup.tablet="3" distancepopup.mobile="5" visible="false" callout_type="centerscreen" callout_type.mobile="centerscreen" callout_type.tablet="centerscreen" name="nameright" type="container" width="10" height="10"  bgroundedge="10"  bgcolor="0xb62925" bgalpha="1.00" bgborder="2 0xffffff 1.00" toheight="40" pumpitup="true" pumpitup.mobile="true" pumpitup.tablet="true"  rotate="0"   minfov="180" maxfov="1" minfov.mobile="180" maxfov.mobile="1" minfov.tablet="180" maxfov.tablet="1" onloaded=" txtadd(parentspot,'hotspot[',get(name),']');  txtadd(callout_pulse,'callout_pulse_',get(name)); addlayer(get(callout_pulse)); layer[get(callout_pulse)].loadstyle(call_out_titlescallout_pulse); copy(layer[get(callout_pulse)].parent,parentspot);   txtadd(callout_line,'callout_line_',get(name)); addlayer(get(callout_line)); copy(hotspot[get(name)].callout_line,callout_line); layer[get(callout_line)].loadstyle(call_out_titlescallout_line); copy(layer[get(callout_line)].parent,parentspot); copy(layer[get(callout_line)].x,xpoint); copy(layer[get(callout_line)].y,ypoint);  txtadd(callout_line_vertical,'callout_line_vertical_',get(name)); addlayer(get(callout_line_vertical)); copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical); layer[get(callout_line_vertical)].loadstyle(call_out_titlescallout_line_vertical); txtadd(parentlayer,'layer[',get(callout_line),']'); copy(layer[get(callout_line_vertical)].parent,parentlayer); txtadd(callout_title,'callout_title_',get(name)); addlayer(get(callout_title)); copy(hotspot[get(name)].callout_title,callout_title); layer[get(callout_title)].loadstyle(call_out_titlescallout_title); txtadd(parentlayer2,'layer[',get(callout_line_vertical),']'); copy(layer[get(callout_title)].parent,parentlayer2); getmessage(montitre, get(tooltip)); copy(layer[get(callout_title)].html,montitre);  txtadd(callout_desc,'callout_desc_',get(name)); addlayer(get(callout_desc)); copy(hotspot[get(name)].callout_desc,callout_desc); layer[get(callout_desc)].loadstyle(call_out_titlescallout_desc); copy(layer[get(callout_desc)].parent,callout_title); getmessage(madesc, get(descriptionid)); copy(layer[get(callout_desc)].html,madesc);  if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true)); if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true)); if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true)); set(events[testshotspots].onviewchanged,testhotspots();) "  oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));" oncallin="animate_callin(get(callout_line), get(callout_line_vertical));" /> <style name="call_out_titlescallout_line" type="container" width="2" height="0" bgalpha="1" bgcolor="0xffffff" align="top" edge="bottom" /> <style name="call_out_titlescallout_line_vertical" type="container" width="0" height="0" bgcolor="0xffffff"   rotate="-0"   bgborder="0,0,0,2 0xffffff"        edge="bottomleft" align="topright"        maskchildren="true" /> <style name="call_out_titlescallout_title" type="text" enabled="false"  align="topleft" ox="10"    roundedge="5"   bg="true" bgcolor="0xffffff" bgalpha="1"   bgborder="false"   css="color:#b62925;font-family:Futura;font-size:10px;text-align:left;"  padding="10 10" /> <style name="call_out_titlescallout_desc" type="text" enabled="false"  align="bottomleft" edge="topleft"    roundedge="5"   bg="true" bgcolor="0xffffff" bgalpha="0"   bgborder="false"   css="color:#b62925;font-family:Futura;font-size:10px;text-align:left;"  padding="5 15" /> <style name="call_out_titlescallout_pulse" type="container" align="center" bg="false" bgborder="3 0xffffff 1.00"  bgroundedge="calc:10 * 2"  width="10" height="10" onloaded="pulse(get(name))"/>  <!-- 360Images Call Out Titles Plugin -->      <callout author_context="true"/> <style distancepopup="2" distancepopup.tablet="3" distancepopup.mobile="5" visible="false" callout_type="centerscreen" callout_type.mobile="centerscreen" callout_type.tablet="centerscreen" name="nameleft" type="container" width="10" height="10"  bgroundedge="10"  bgcolor="0xb62925" bgalpha="1.00" bgborder="2 0xffffff 1.00" toheight="40" pumpitup="true" pumpitup.mobile="true" pumpitup.tablet="true"   rotate="-0"  minfov="180" maxfov="1" minfov.mobile="180" maxfov.mobile="1" minfov.tablet="180" maxfov.tablet="1" onloaded=" txtadd(parentspot,'hotspot[',get(name),']');  txtadd(callout_pulse,'callout_pulse_',get(name)); addlayer(get(callout_pulse)); layer[get(callout_pulse)].loadstyle(call_out_titles4callout_pulse); copy(layer[get(callout_pulse)].parent,parentspot);   txtadd(callout_line,'callout_line_',get(name)); addlayer(get(callout_line)); copy(hotspot[get(name)].callout_line,callout_line); layer[get(callout_line)].loadstyle(call_out_titles4callout_line); copy(layer[get(callout_line)].parent,parentspot); copy(layer[get(callout_line)].x,xpoint); copy(layer[get(callout_line)].y,ypoint);  txtadd(callout_line_vertical,'callout_line_vertical_',get(name)); addlayer(get(callout_line_vertical)); copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical); layer[get(callout_line_vertical)].loadstyle(call_out_titles4callout_line_vertical); txtadd(parentlayer,'layer[',get(callout_line),']'); copy(layer[get(callout_line_vertical)].parent,parentlayer); txtadd(callout_title,'callout_title_',get(name)); addlayer(get(callout_title)); copy(hotspot[get(name)].callout_title,callout_title); layer[get(callout_title)].loadstyle(call_out_titles4callout_title); txtadd(parentlayer2,'layer[',get(callout_line_vertical),']'); copy(layer[get(callout_title)].parent,parentlayer2); getmessage(montitre, get(tooltip)); copy(layer[get(callout_title)].html,montitre);  txtadd(callout_desc,'callout_desc_',get(name)); addlayer(get(callout_desc)); copy(hotspot[get(name)].callout_desc,callout_desc); layer[get(callout_desc)].loadstyle(call_out_titles4callout_desc); copy(layer[get(callout_desc)].parent,callout_title); getmessage(madesc, get(descriptionid)); copy(layer[get(callout_desc)].html,madesc);  if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true)); if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true)); if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true)); set(events[testshotspots].onviewchanged,testhotspots();) "  oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));" oncallin="animate_callin(get(callout_line), get(callout_line_vertical));" /> <style name="call_out_titles4callout_line" type="container" width="2" height="0" bgalpha="1" bgcolor="0xffffff" align="top" edge="bottom" /> <style name="call_out_titles4callout_line_vertical" type="container" width="0" height="0" bgcolor="0xffffff"     rotate="0"   bgborder="0,2,0,0 0xffffff"        edge="bottomright" align="topleft"      maskchildren="true" /> <style name="call_out_titles4callout_title" type="text" enabled="false"   align="topright" ox="-10"   roundedge="5"   bg="true" bgcolor="0xffffff" bgalpha="1"   bgborder="false"   css="color:#b62925;font-family:Futura;font-size:10px;text-align:right;"  padding="10 10" /> <style name="call_out_titles4callout_desc" type="text" enabled="false"   align="bottomright" edge="topright"   roundedge="5"   bg="true" bgcolor="0xffffff" bgalpha="0"   bgborder="false"   css="color:#b62925;font-family:Futura;font-size:10px;text-align:right;"  padding="5 15" /> <style name="call_out_titles4callout_pulse" type="container" align="center" bg="false" bgborder="3 0xffffff 1.00"  bgroundedge="calc:10 * 2"  width="10" height="10" onloaded="pulse(get(name))"/>  <!-- 360Images Call Out Titles Plugin -->      <callout author_context="true"/> <style distancepopup="2" distancepopup.tablet="3" distancepopup.mobile="5" visible="false" callout_type="centerscreen" callout_type.mobile="centerscreen" callout_type.tablet="centerscreen" name="nameleftlow" type="container" width="10" height="10"  bgroundedge="10"  bgcolor="0xb62925" bgalpha="1.00" bgborder="2 0xffffff 1.00" toheight="30" pumpitup="true" pumpitup.mobile="true" pumpitup.tablet="true"   rotate="-0"  minfov="180" maxfov="1" minfov.mobile="180" maxfov.mobile="1" minfov.tablet="180" maxfov.tablet="1" onloaded=" txtadd(parentspot,'hotspot[',get(name),']');  txtadd(callout_pulse,'callout_pulse_',get(name)); addlayer(get(callout_pulse)); layer[get(callout_pulse)].loadstyle(call_out_titles1callout_pulse); copy(layer[get(callout_pulse)].parent,parentspot);   txtadd(callout_line,'callout_line_',get(name)); addlayer(get(callout_line)); copy(hotspot[get(name)].callout_line,callout_line); layer[get(callout_line)].loadstyle(call_out_titles1callout_line); copy(layer[get(callout_line)].parent,parentspot); copy(layer[get(callout_line)].x,xpoint); copy(layer[get(callout_line)].y,ypoint);  txtadd(callout_line_vertical,'callout_line_vertical_',get(name)); addlayer(get(callout_line_vertical)); copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical); layer[get(callout_line_vertical)].loadstyle(call_out_titles1callout_line_vertical); txtadd(parentlayer,'layer[',get(callout_line),']'); copy(layer[get(callout_line_vertical)].parent,parentlayer); txtadd(callout_title,'callout_title_',get(name)); addlayer(get(callout_title)); copy(hotspot[get(name)].callout_title,callout_title); layer[get(callout_title)].loadstyle(call_out_titles1callout_title); txtadd(parentlayer2,'layer[',get(callout_line_vertical),']'); copy(layer[get(callout_title)].parent,parentlayer2); getmessage(montitre, get(tooltip)); copy(layer[get(callout_title)].html,montitre);  txtadd(callout_desc,'callout_desc_',get(name)); addlayer(get(callout_desc)); copy(hotspot[get(name)].callout_desc,callout_desc); layer[get(callout_desc)].loadstyle(call_out_titles1callout_desc); copy(layer[get(callout_desc)].parent,callout_title); getmessage(madesc, get(descriptionid)); copy(layer[get(callout_desc)].html,madesc);  if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true)); if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true)); if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true)); set(events[testshotspots].onviewchanged,testhotspots();) "  oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));" oncallin="animate_callin(get(callout_line), get(callout_line_vertical));" /> <style name="call_out_titles1callout_line" type="container" width="2" height="0" bgalpha="1" bgcolor="0xffffff" align="top" edge="bottom" /> <style name="call_out_titles1callout_line_vertical" type="container" width="0" height="0" bgcolor="0xffffff"     rotate="0"   bgborder="0,2,0,0 0xffffff"        edge="bottomright" align="topleft"      maskchildren="true" /> <style name="call_out_titles1callout_title" type="text" enabled="false"   align="topright" ox="-10"    bg="true" bgcolor="0xffffff" bgalpha="1"   bgborder="false"   css="color:#b62925;font-family:Futura;font-size:9px;text-align:right;"  padding="10 10" /> <style name="call_out_titles1callout_desc" type="text" enabled="false"   align="bottomright" edge="topright"    bg="false"   bgborder="false"      textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"  css="color:#ffffff;font-family:Futura;font-size:18px;text-align:right;"  padding="5 15" /> <style name="call_out_titles1callout_pulse" type="container" align="center" bg="false" bgborder="3 0xffffff 1.00"  bgroundedge="calc:10 * 2"  width="10" height="10" onloaded="pulse(get(name))"/> 
+<!-- ********** -->
+<!-- MasterPlan -->
+<!-- id : buttonForASinglePano -->
+<!-- ********** -->
+
+  <layer name="buttonForASinglePano"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano/masterplan.png"
+         align="bottomright"
+         x="10"
+         y="130"
+         zorder="5"
+         visible="false"
+         onclick="buttonForASinglePanoOnClick"
+         onout=""
+         onover="set(layer[buttonForASinglePanoover].visible, true);set(layer[buttonForASinglePano].visible, false);"
+         height="6%"
+         width="prop"
+         />
+
+
+<layer name="buttonForASinglePanoover"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano/masterplanon.png"
+         align="bottomright"
+         x="10"
+         y="130"
+         zorder="5"
+         visible="false"
+         onclick="buttonForASinglePanoOnClick"
+         onout="set(layer[buttonForASinglePano].visible, true);set(layer[buttonForASinglePanoover].visible, false);"
+         onover=""
+         height="6%"
+         width="prop"
+         />
+
+
+  <action name="buttonForASinglePanoOnClick">hideTooltip();zoomto(get(panoview.fov),smooth(400,20,100));
+          mainloadscene(pano11);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+  </action>
+
+  <events name="buttonForASinglePanoevents"
+    onTourStart="showbuttonForASinglePano();"
+    hidetourcontrols="hidebuttonForASinglePano();"
+    showtourcontrols="showbuttonForASinglePano();"
+
+    onPanoStart="showbuttonForASinglePano();"
+
+    keep="true" />
+  <action name="hidebuttonForASinglePano">set(layer[buttonForASinglePano].visible, false);</action>
+  <action name="showbuttonForASinglePano">
+    set(display_buttonForASinglePano, false);
+    if(tour_displaycontrols,
+
+
+    if (xml.scene == pano74, set(display_buttonForASinglePano, true); );
+
+    if (xml.scene == pano15, set(display_buttonForASinglePano, true); );
+
+    if (xml.scene == pano83, set(display_buttonForASinglePano, true); );
+
+
+    set(layer[buttonForASinglePanoover].visible, false);
+
+    );
+    if (display_buttonForASinglePano,
+      set(layer[buttonForASinglePano].visible, true);
+    ,
+      hidebuttonForASinglePano();
+    );
+  </action>
+
+
+
+<!-- ********** -->
+<!-- LandParcel -->
+<!-- id : buttonForASinglePano4 -->
+<!-- ********** -->
+
+  <layer name="buttonForASinglePano4"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano4/landparcel.png"
+         align="bottomright"
+         x="10"
+         y="10"
+         zorder="6"
+         visible="false"
+         onclick="buttonForASinglePano4OnClick"
+         onout=""
+         onover="set(layer[buttonForASinglePano4over].visible, true);set(layer[buttonForASinglePano4].visible, false);"
+         height="6%"
+         width="prop"
+         />
+
+
+<layer name="buttonForASinglePano4over"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano4/landparcelon.png"
+         align="bottomright"
+         x="10"
+         y="10"
+         zorder="6"
+         visible="false"
+         onclick="buttonForASinglePano4OnClick"
+         onout="set(layer[buttonForASinglePano4].visible, true);set(layer[buttonForASinglePano4over].visible, false);"
+         onover=""
+         height="6%"
+         width="prop"
+         />
+
+
+  <action name="buttonForASinglePano4OnClick">hideTooltip();zoomto(get(panoview.fov),smooth(400,20,100));
+          mainloadscene(pano74);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+  </action>
+
+  <events name="buttonForASinglePano4events"
+    onTourStart="showbuttonForASinglePano4();"
+    hidetourcontrols="hidebuttonForASinglePano4();"
+    showtourcontrols="showbuttonForASinglePano4();"
+
+    onPanoStart="showbuttonForASinglePano4();"
+
+    keep="true" />
+  <action name="hidebuttonForASinglePano4">set(layer[buttonForASinglePano4].visible, false);</action>
+  <action name="showbuttonForASinglePano4">
+    set(display_buttonForASinglePano4, false);
+    if(tour_displaycontrols,
+
+
+    if (xml.scene == pano15, set(display_buttonForASinglePano4, true); );
+
+    if (xml.scene == pano11, set(display_buttonForASinglePano4, true); );
+
+    if (xml.scene == pano83, set(display_buttonForASinglePano4, true); );
+
+
+    set(layer[buttonForASinglePano4over].visible, false);
+
+    );
+    if (display_buttonForASinglePano4,
+      set(layer[buttonForASinglePano4].visible, true);
+    ,
+      hidebuttonForASinglePano4();
+    );
+  </action>
+
+
+
+<!-- ********** -->
+<!-- LandParcelOn -->
+<!-- id : buttonForASinglePano5 -->
+<!-- ********** -->
+
+  <layer name="buttonForASinglePano5"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano5/landparcelon.png"
+         align="bottomright"
+         x="10"
+         y="10"
+         zorder="7"
+         visible="false"
+         handcursor="false"
+         enabled="false"
+         height="6%"
+         width="prop"
+         />
+
+
+
+
+  <events name="buttonForASinglePano5events"
+    onTourStart="showbuttonForASinglePano5();"
+    hidetourcontrols="hidebuttonForASinglePano5();"
+    showtourcontrols="showbuttonForASinglePano5();"
+
+    onPanoStart="showbuttonForASinglePano5();"
+
+    keep="true" />
+  <action name="hidebuttonForASinglePano5">set(layer[buttonForASinglePano5].visible, false);</action>
+  <action name="showbuttonForASinglePano5">
+    set(display_buttonForASinglePano5, false);
+    if(tour_displaycontrols,
+
+
+    if (xml.scene == pano74, set(display_buttonForASinglePano5, true); );
+
+
+    );
+    if (display_buttonForASinglePano5,
+      set(layer[buttonForASinglePano5].visible, true);
+    ,
+      hidebuttonForASinglePano5();
+    );
+  </action>
+
+
+
+<!-- ********** -->
+<!-- NeighbourhoodOn -->
+<!-- id : buttonForASinglePano7 -->
+<!-- ********** -->
+
+  <layer name="buttonForASinglePano7"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano7/neighbourhoodon.png"
+         align="bottomright"
+         x="10"
+         y="50"
+         zorder="8"
+         visible="false"
+         handcursor="false"
+         enabled="false"
+         height="6%"
+         width="prop"
+         />
+
+
+
+
+  <events name="buttonForASinglePano7events"
+    onTourStart="showbuttonForASinglePano7();"
+    hidetourcontrols="hidebuttonForASinglePano7();"
+    showtourcontrols="showbuttonForASinglePano7();"
+
+    onPanoStart="showbuttonForASinglePano7();"
+
+    keep="true" />
+  <action name="hidebuttonForASinglePano7">set(layer[buttonForASinglePano7].visible, false);</action>
+  <action name="showbuttonForASinglePano7">
+    set(display_buttonForASinglePano7, false);
+    if(tour_displaycontrols,
+
+
+    if (xml.scene == pano83, set(display_buttonForASinglePano7, true); );
+
+
+    );
+    if (display_buttonForASinglePano7,
+      set(layer[buttonForASinglePano7].visible, true);
+    ,
+      hidebuttonForASinglePano7();
+    );
+  </action>
+
+
+ <!-- 360Images Call Out Titles Plugin -->      <callout author_context="true"/> <style distancepopup="2" distancepopup.tablet="3" distancepopup.mobile="5" visible="false" callout_type="centerscreen" callout_type.mobile="centerscreen" callout_type.tablet="centerscreen" name="namerightlow" type="container" width="10" height="10"  bgroundedge="10"  bgcolor="0xb62925" bgalpha="1.00" bgborder="2 0xffffff 1.00" toheight="30" pumpitup="true" pumpitup.mobile="true" pumpitup.tablet="true"  rotate="0"   minfov="180" maxfov="1" minfov.mobile="180" maxfov.mobile="1" minfov.tablet="180" maxfov.tablet="1" onloaded=" txtadd(parentspot,'hotspot[',get(name),']');  txtadd(callout_pulse,'callout_pulse_',get(name)); addlayer(get(callout_pulse)); layer[get(callout_pulse)].loadstyle(call_out_titles2callout_pulse); copy(layer[get(callout_pulse)].parent,parentspot);   txtadd(callout_line,'callout_line_',get(name)); addlayer(get(callout_line)); copy(hotspot[get(name)].callout_line,callout_line); layer[get(callout_line)].loadstyle(call_out_titles2callout_line); copy(layer[get(callout_line)].parent,parentspot); copy(layer[get(callout_line)].x,xpoint); copy(layer[get(callout_line)].y,ypoint);  txtadd(callout_line_vertical,'callout_line_vertical_',get(name)); addlayer(get(callout_line_vertical)); copy(hotspot[get(name)].callout_line_vertical,callout_line_vertical); layer[get(callout_line_vertical)].loadstyle(call_out_titles2callout_line_vertical); txtadd(parentlayer,'layer[',get(callout_line),']'); copy(layer[get(callout_line_vertical)].parent,parentlayer); txtadd(callout_title,'callout_title_',get(name)); addlayer(get(callout_title)); copy(hotspot[get(name)].callout_title,callout_title); layer[get(callout_title)].loadstyle(call_out_titles2callout_title); txtadd(parentlayer2,'layer[',get(callout_line_vertical),']'); copy(layer[get(callout_title)].parent,parentlayer2); getmessage(montitre, get(tooltip)); copy(layer[get(callout_title)].html,montitre);  txtadd(callout_desc,'callout_desc_',get(name)); addlayer(get(callout_desc)); copy(hotspot[get(name)].callout_desc,callout_desc); layer[get(callout_desc)].loadstyle(call_out_titles2callout_desc); copy(layer[get(callout_desc)].parent,callout_title); getmessage(madesc, get(descriptionid)); copy(layer[get(callout_desc)].html,madesc);  if(hotspot[get(name)].onclick, copy(layer[get(callout_line_vertical)].onclick,hotspot[get(name)].onclick);set(layer[get(callout_line_vertical)].bgcapture,true)); if(hotspot[get(name)].callout_type == onuserclick, set(hotspot[get(name)].onclick,oncallout());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true)); if(hotspot[get(name)].callout_type == onover, set(hotspot[get(name)].onover,oncallout());set(hotspot[get(name)].onout,oncallin());set(hotspot[get(name)].bgcapture,true);set(hotspot[get(name)].handcursor,true)); set(events[testshotspots].onviewchanged,testhotspots();) "  oncallout="animate_callout(get(callout_line), get(callout_line_vertical), get(callout_title), get(callout_desc),get(toheight));" oncallin="animate_callin(get(callout_line), get(callout_line_vertical));" /> <style name="call_out_titles2callout_line" type="container" width="2" height="0" bgalpha="1" bgcolor="0xffffff" align="top" edge="bottom" /> <style name="call_out_titles2callout_line_vertical" type="container" width="0" height="0" bgcolor="0xffffff"   rotate="-0"   bgborder="0,0,0,2 0xffffff"        edge="bottomleft" align="topright"        maskchildren="true" /> <style name="call_out_titles2callout_title" type="text" enabled="false"  align="topleft" ox="10"     bg="true" bgcolor="0xffffff" bgalpha="1"   bgborder="false"   css="color:#b62925;font-family:Futura;font-size:9px;text-align:left;"  padding="10 10" /> <style name="call_out_titles2callout_desc" type="text" enabled="false"  align="bottomleft" edge="topleft"     bg="false"   bgborder="false"      textshadow="1" textshadowrange="5.0" textshadowangle="45" textshadowcolor="0x000000" textshadowalpha="1"  css="color:#ffffff;font-family:Futura;font-size:18px;text-align:left;"  padding="5 15" /> <style name="call_out_titles2callout_pulse" type="container" align="center" bg="false" bgborder="3 0xffffff 1.00"  bgroundedge="calc:10 * 2"  width="10" height="10" onloaded="pulse(get(name))"/> 
+<!-- ********** -->
+<!-- EntryGateOn -->
+<!-- id : buttonForASinglePano9 -->
+<!-- ********** -->
+
+  <layer name="buttonForASinglePano9"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano9/entrygateon.png"
+         align="bottomright"
+         x="10"
+         y="90"
+         zorder="10"
+         visible="false"
+         handcursor="false"
+         enabled="false"
+         height="5%"
+         width="prop"
+         />
+
+
+
+
+  <events name="buttonForASinglePano9events"
+    onTourStart="showbuttonForASinglePano9();"
+    hidetourcontrols="hidebuttonForASinglePano9();"
+    showtourcontrols="showbuttonForASinglePano9();"
+
+    onPanoStart="showbuttonForASinglePano9();"
+
+    keep="true" />
+  <action name="hidebuttonForASinglePano9">set(layer[buttonForASinglePano9].visible, false);</action>
+  <action name="showbuttonForASinglePano9">
+    set(display_buttonForASinglePano9, false);
+    if(tour_displaycontrols,
+
+
+    if (xml.scene == pano15, set(display_buttonForASinglePano9, true); );
+
+
+    );
+    if (display_buttonForASinglePano9,
+      set(layer[buttonForASinglePano9].visible, true);
+    ,
+      hidebuttonForASinglePano9();
+    );
+  </action>
+
+
+
+<!-- ********** -->
+<!-- EntryGate -->
+<!-- id : buttonForASinglePano8 -->
+<!-- ********** -->
+
+  <layer name="buttonForASinglePano8"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano8/entrygate.png"
+         align="bottomright"
+         x="10"
+         y="90"
+         zorder="11"
+         visible="false"
+         onclick="buttonForASinglePano8OnClick"
+         onout=""
+         onover="set(layer[buttonForASinglePano8over].visible, true);set(layer[buttonForASinglePano8].visible, false);"
+         height="6%"
+         width="prop"
+         />
+
+
+<layer name="buttonForASinglePano8over"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano8/entrygateon.png"
+         align="bottomright"
+         x="10"
+         y="90"
+         zorder="11"
+         visible="false"
+         onclick="buttonForASinglePano8OnClick"
+         onout="set(layer[buttonForASinglePano8].visible, true);set(layer[buttonForASinglePano8over].visible, false);"
+         onover=""
+         height="6%"
+         width="prop"
+         />
+
+
+  <action name="buttonForASinglePano8OnClick">hideTooltip();zoomto(get(panoview.fov),smooth(400,20,100));
+          mainloadscene(pano15);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+  </action>
+
+  <events name="buttonForASinglePano8events"
+    onTourStart="showbuttonForASinglePano8();"
+    hidetourcontrols="hidebuttonForASinglePano8();"
+    showtourcontrols="showbuttonForASinglePano8();"
+
+    onPanoStart="showbuttonForASinglePano8();"
+
+    keep="true" />
+  <action name="hidebuttonForASinglePano8">set(layer[buttonForASinglePano8].visible, false);</action>
+  <action name="showbuttonForASinglePano8">
+    set(display_buttonForASinglePano8, false);
+    if(tour_displaycontrols,
+
+
+    if (xml.scene == pano83, set(display_buttonForASinglePano8, true); );
+
+    if (xml.scene == pano11, set(display_buttonForASinglePano8, true); );
+
+    if (xml.scene == pano74, set(display_buttonForASinglePano8, true); );
+
+
+    set(layer[buttonForASinglePano8over].visible, false);
+
+    );
+    if (display_buttonForASinglePano8,
+      set(layer[buttonForASinglePano8].visible, true);
+    ,
+      hidebuttonForASinglePano8();
+    );
+  </action>
+
+
+
+<!-- ********** -->
+<!-- Neighbourhood -->
+<!-- id : buttonForASinglePano6 -->
+<!-- ********** -->
+
+  <layer name="buttonForASinglePano6"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano6/neighbourhood.png"
+         align="bottomright"
+         x="10"
+         y="50"
+         zorder="12"
+         visible="false"
+         onclick="buttonForASinglePano6OnClick"
+         onout=""
+         onover="set(layer[buttonForASinglePano6over].visible, true);set(layer[buttonForASinglePano6].visible, false);"
+         height="6%"
+         width="prop"
+         />
+
+
+<layer name="buttonForASinglePano6over"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano6/neighbourhoodon.png"
+         align="bottomright"
+         x="10"
+         y="50"
+         zorder="12"
+         visible="false"
+         onclick="buttonForASinglePano6OnClick"
+         onout="set(layer[buttonForASinglePano6].visible, true);set(layer[buttonForASinglePano6over].visible, false);"
+         onover=""
+         height="6%"
+         width="prop"
+         />
+
+
+  <action name="buttonForASinglePano6OnClick">hideTooltip();zoomto(get(panoview.fov),smooth(400,20,100));
+          mainloadscene(pano83);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+
+  </action>
+
+  <events name="buttonForASinglePano6events"
+    onTourStart="showbuttonForASinglePano6();"
+    hidetourcontrols="hidebuttonForASinglePano6();"
+    showtourcontrols="showbuttonForASinglePano6();"
+
+    onPanoStart="showbuttonForASinglePano6();"
+
+    keep="true" />
+  <action name="hidebuttonForASinglePano6">set(layer[buttonForASinglePano6].visible, false);</action>
+  <action name="showbuttonForASinglePano6">
+    set(display_buttonForASinglePano6, false);
+    if(tour_displaycontrols,
+
+
+    if (xml.scene == pano15, set(display_buttonForASinglePano6, true); );
+
+    if (xml.scene == pano11, set(display_buttonForASinglePano6, true); );
+
+    if (xml.scene == pano74, set(display_buttonForASinglePano6, true); );
+
+
+    set(layer[buttonForASinglePano6over].visible, false);
+
+    );
+    if (display_buttonForASinglePano6,
+      set(layer[buttonForASinglePano6].visible, true);
+    ,
+      hidebuttonForASinglePano6();
+    );
+  </action>
+
+
+
+<!-- ********** -->
+<!-- Logo -->
+<!-- id : logo -->
+<!-- ********** -->
+
+
+  <layer align="topleft"
+         x="10"
+         y="10"
+         zorder="13"
+         name="logo"
+         keep="true"
+         visible="false"
+         capture="false"
+
+         url="%FIRSTXML%/graphics/logo/logo.png" 
+         handcursor="false"
+
+         height="12%"
+         width="prop"
+
+         />
+
+  <events name="logoevents" 
+    onTourStart="showlogo();"
+    keep="true" />
+
+  <action name="hidelogo">
+    set(layer[logo].visible, false);
+  </action>
+  <action name="showlogo">
+      set(layer[logo].visible, true);
+  </action>
+
+
+
+
+
+<!-- ********** -->
+<!-- Sans Control Bar -->
+<!-- id : SansControlBar -->
+<!-- ********** -->
+
+  <krpano SansControlBarbarbuilt="false" SansControlBarbackgroundwidthwhenclosed="0" SansControlBarbackgroundwidthwhenopened="0" SansControlBarIsOpened="false" />
+  <events name="SansControlBarevents" 
+    onxmlcomplete="SansControlBarbuildMenuBar();" 
+
+
+    keep="true" />
+
+
+
+  <action name="SansControlBarbuildMenuBar">
+    ifnot (SansControlBarbarbuilt, SansControlBarbuildMenu(); set(SansControlBarbarbuilt, true););
+  </action>
+
+  <style name="SansControlBar_btn_style"
+         keep="true"
+         edge="right"
+         align="right"
+         x="0" y="0"
+         width="40" height="40"
+         crop="0|0|60|60"
+         onovercrop="0|60|60|60"
+         ondowncrop="0|120|60|60"
+         onhover="showTooltip('plugin', SansControlBarmenuTooltipStyle, top);"
+         onout="hideTooltip();"
+         />
+  <style name="SansControlBar_btn_style_off"
+         keep="true"
+         edge="right"
+         align="right"
+         x="0" y="0"
+         width="40" height="40"
+         onhover="showTooltip('plugin', SansControlBarmenuTooltipStyle, top);"
+         onout="hideTooltip();"
+         />
+
+  <layer name="SansControlBar_menu_bg"
+         keep="true"
+         type="container"
+         zorder="14"
+         width="40"
+         height="40"
+         align="topright"
+         x="10" y="10"
+         maskchildren="true"
+         rotate="0"
+         visible="false"
+         >
+
+
+
+
+
+
+    <layer name="SansControlBarbtn_openfs"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_enter_fs.png"
+            onclick="enterFullscreen();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            devices="fullscreensupport"
+            tooltip="SansControlBaropenFsTip"
+            />
+    <layer name="SansControlBarbtn_closefs"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_close_fs.png"
+            onclick="exitFullscreen();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            devices="fullscreensupport"
+            tooltip="SansControlBarcloseFsTip"
+            />
+
+    <layer name="SansControlBarbtn_autorotate_on"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_start_autorotation.png"
+            onclick="resumeautorotation();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            tooltip="SansControlBarautorotateOnTip"
+            />
+    <layer name="SansControlBarbtn_autorotate_off"
+            url="%FIRSTXML%/graphics/sans controlbar/btn_stop_autorotation.png"
+            onclick="pauseautorotation();
+"
+            style="SansControlBar_btn_style"
+            visible="false"
+            tooltip="SansControlBarautorotateOffTip"
+            />
+
+
+
+
+
+ </layer>
+
+
+
+
+
+
+  <action name="SansControlBarhideMenuControls">
+    set(SansControlBarIsOpened, false);
+
+
+	SansControlBarupdateFullscreenButtons();
+
+
+	SansControlBarupdateAutorotationButtons();
+
+
+
+
+
+
+	set(layer[SansControlBar_menu_bg].width, get(SansControlBarbackgroundwidthwhenclosed));
+
+	set(layer[SansControlBar_menu_bg].visible, true);
+  </action>
+  <action name="SansControlBarshowMenuControls">
+    set(SansControlBarIsOpened, true);
+	set(layer[SansControlBar_menu_bg].visible, true);
+
+
+	SansControlBarupdateFullscreenButtons();
+
+
+	SansControlBarupdateAutorotationButtons();
+
+
+
+
+
+    set(layer[SansControlBar_menu_bg].width, get(SansControlBarbackgroundwidthwhenopened));
+  </action>
+
+
+
+
+  <events name="SansControlBarmenufullscreenchangeevent"
+          onenterfullscreen="SansControlBarupdateFullscreenButtons();"
+          onexitfullscreen="SansControlBarupdateFullscreenButtons();"
+          keep="true"/>
+	<action name="SansControlBarHideFullscreenButtons">
+		set(layer[SansControlBarbtn_openfs].visible , false);
+		set(layer[SansControlBarbtn_closefs].visible, false);
+	</action>
+	<action name="SansControlBarShowFullscreenButtons">
+		if (device.fullscreensupport,
+			if(tour_fullscreen,
+				set(layer[SansControlBarbtn_openfs].visible , false);
+				set(layer[SansControlBarbtn_closefs].visible, true);
+			,
+				set(layer[SansControlBarbtn_openfs].visible ,true);
+				set(layer[SansControlBarbtn_closefs].visible,false);
+			);
+		,
+			SansControlBarHideFullscreenButtons();
+		);
+	</action>
+	<action name="SansControlBarupdateFullscreenButtons">
+		if (SansControlBarIsOpened,
+			SansControlBarShowFullscreenButtons();
+		,
+			SansControlBarHideFullscreenButtons();
+		);
+	</action>
+
+	<events name="SansControlBarAutorotationEvents"
+		onstartautorotation="SansControlBarupdateAutorotationButtons();"
+		onresumeautorotation="SansControlBarupdateAutorotationButtons();"
+		onstopautorotation="SansControlBarupdateAutorotationButtons();"
+		onpauseautorotation="SansControlBarupdateAutorotationButtons();"
+		keep="true"/>
+	<action name="SansControlBarHideAutorotationButtons">
+		set(layer[SansControlBarbtn_autorotate_off].visible, false);
+		set(layer[SansControlBarbtn_autorotate_on].visible , false);
+	</action>
+	<action name="SansControlBarShowAutorotationButtons">
+		if(autorotate.enabled == false,
+			set(layer[SansControlBarbtn_autorotate_off].visible, false);
+			set(layer[SansControlBarbtn_autorotate_on].visible , true);
+		,
+			set(layer[SansControlBarbtn_autorotate_off].visible, true);
+			set(layer[SansControlBarbtn_autorotate_on].visible , false);
+		);
+	</action>
+	<action name="SansControlBarupdateAutorotationButtons">
+		if (SansControlBarIsOpened,
+			SansControlBarShowAutorotationButtons();
+		,
+			SansControlBarHideAutorotationButtons();
+		);
+	</action>
+
+
+
+<layer name="SansControlBarmenuTooltipStyle"
+	keep="true"
+	enabled="false"
+	capture="false"
+	url="%FIRSTXML%/graphics/textfield.swf"
+	align="center"
+	roundedge="3"
+	background="true"
+	backgroundcolor="0xb62925"
+	backgroundalpha="0.90000762951094837"
+	border="false"
+	css="color:#ffffff;font-family:Futura;font-style:italic;font-size:11px;text-align:left;"
+	height="20"
+	autoheight="true"
+	autowidth="auto"
+	xoffset="0"
+	yoffset="0"
+	padding="2"
+	selectable="false"
+	zorder="0"
+	visible="false"
+	html=""
+	edge="top"
+/>
+  <action name="SansControlBarbuildMenu">
+    
+    set(SansControlBarbutton_pos, 0);
+
+
+
+      if (device.fullscreensupport,
+        set(layer[SansControlBarbtn_openfs].x , get(SansControlBarbutton_pos));
+        set(layer[SansControlBarbtn_closefs].x, get(SansControlBarbutton_pos));
+        inc(SansControlBarbutton_pos, 45);
+      );
+
+
+
+      set(layer[SansControlBarbtn_autorotate_on].x , get(SansControlBarbutton_pos));
+      set(layer[SansControlBarbtn_autorotate_off].x, get(SansControlBarbutton_pos));
+      inc(SansControlBarbutton_pos, 45);
+
+
+
+
+
+
+
+
+
+      dec(SansControlBarbutton_pos, 5);
+
+      set(SansControlBarbackgroundwidthwhenopened, get(SansControlBarbutton_pos));
+
+
+    
+      set(layer[SansControlBar_menu_bg].width, get(SansControlBarbackgroundwidthwhenopened));
+	
+	
+	
+    </action>
+
+	<events name="SansControlBarStartTourEvents" onTourStart="SansControlBarCallOnStartTour();" keep="true" />
+	
+	<action name="SansControlBarCallOnStartTour">
+		
+		SansControlBarshowMenuControls();
+	</action>
+
+
+
+<!-- ********** -->
+<!-- MasterPlanOn -->
+<!-- id : buttonForASinglePano12 -->
+<!-- ********** -->
+
+  <layer name="buttonForASinglePano12"
+         keep="true"
+         url="%FIRSTXML%/graphics/buttonforasinglepano12/masterplanon.png"
+         align="bottomright"
+         x="10"
+         y="130"
+         zorder="15"
+         visible="false"
+         handcursor="false"
+         enabled="false"
+         height="6%"
+         width="prop"
+         />
+
+
+
+
+  <events name="buttonForASinglePano12events"
+    onTourStart="showbuttonForASinglePano12();"
+    hidetourcontrols="hidebuttonForASinglePano12();"
+    showtourcontrols="showbuttonForASinglePano12();"
+
+    onPanoStart="showbuttonForASinglePano12();"
+
+    keep="true" />
+  <action name="hidebuttonForASinglePano12">set(layer[buttonForASinglePano12].visible, false);</action>
+  <action name="showbuttonForASinglePano12">
+    set(display_buttonForASinglePano12, false);
+    if(tour_displaycontrols,
+
+
+    if (xml.scene == pano11, set(display_buttonForASinglePano12, true); );
+
+
+    );
+    if (display_buttonForASinglePano12,
+      set(layer[buttonForASinglePano12].visible, true);
+    ,
+      hidebuttonForASinglePano12();
+    );
+  </action>
+
+
+
+<!-- ********** -->
+<!-- Context menu -->
+<!-- id : contextmenu -->
+<!-- ********** -->
+  <contextmenu fullscreen="false" versioninfo="false" touch="true">
+    <item name="website1" onclick="getmessage(urltoopen,contextmenuwebsiteurl1);openurl(get(urltoopen),_blank);" />
+    <item name="website2" onclick="getmessage(urltoopen,contextmenuwebsiteurl2);openurl(get(urltoopen),_blank);" />
+    <item name="fullscreenentry" onclick="enterFullscreen();
+" separator="true"/>
+  </contextmenu>
+
+  <events name="contextmenuevents" keep="true" 
+    onenterfullscreen="updateContextMenu" onexitfullscreen="updateContextMenu" 
+    onxmlcomplete="updateContextMenu" 
+    changetourlanguage="updateContextMenu" 
+    />
+  <events name="contextmenuvrevents" keep="true" 
+    onvravailable="updateContextMenu();" onvrunavailable="updateContextMenu();"
+    devices="html5"
+    />
+  <action name="updateContextMenu">
+    getmessage(contextmenu.item[website1].caption, contextmenuopenwebsitelabel1);
+    getmessage(contextmenu.item[website2].caption, contextmenuopenwebsitelabel2);
+    if (device.fullscreensupport,
+      if(tour_fullscreen,
+        getmessage(contextmenu.item[fullscreenentry].caption, contextmenucloseFsLabel);
+        set(contextmenu.item[fullscreenentry].onclick, exitFullscreen();
+);
+       ,
+        getmessage(contextmenu.item[fullscreenentry].caption, contextmenuopenFsLabel);
+        set(contextmenu.item[fullscreenentry].onclick, enterFullscreen();
+);
+      );
+     ,
+      set(contextmenu.item[fullscreenentry].visible, false);
+    );
+  </action>
+
+  <action name="displayImage">
+    if (layer[displayedStandardImage],
+      if(layer[displayedStandardImage].doNotDeleteMe,
+        set(layer[displayedStandardImage].currentCall, false);
+        set(layer[displayedStandardImage].doNotDeleteMe, false);
+        
+        if (%1 == layer[displayedStandardImage].url,
+          applyDisplayedImageObjectAnimation(%8);
+        ,
+          setDisplayedImageObjectParameters(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10);
+        );
+      ,
+        set(layer[displayedStandardImage].currentCall, false);
+        set(layer[displayedStandardImage].doNotDeleteMe, true);
+        events.dispatch(onremovedisplayedobject);
+        delayedcall(0.2,displayImage(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12););
+      );
+    ,
+      if(%10,
+        addlayer(displayedStandardImageOverlay);
+        set(layer[displayedStandardImageOverlay].keep, false);
+        set(layer[displayedStandardImageOverlay].width, 100%);
+        set(layer[displayedStandardImageOverlay].height, 100%);
+        set(layer[displayedStandardImageOverlay].type, container);
+        set(layer[displayedStandardImageOverlay].zorder, 98);
+        set(layer[displayedStandardImageOverlay].visible, false);
+        set(layer[displayedStandardImageOverlay].onclick, applyDisplayedImageObjectAnimation(%8););
+        set(layer[displayedStandardImageOverlay].bgcolor, "0x%11");
+        set(layer[displayedStandardImageOverlay].bgalpha, %12);
+        set(layer[displayedStandardImageOverlay].bgcapture, true);
+      );
+      addlayer(displayedStandardImage);
+      set(layer[displayedStandardImage].keep, false);
+      set(layer[displayedStandardImage].onclick, applyDisplayedImageObjectAnimation(%8););
+      set(layer[displayedStandardImage].zorder , 99);
+      set(layer[displayedStandardImage].currentCall, true);
+      set(layer[displayedStandardImage].doNotDeleteMe, true);
+      set(layer[displayedStandardImage].onloaded, resizeDisplayedImageObject());
+      events.dispatch(onremovedisplayedobject);
+      delayedcall(0.2,displayImage(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12););
+      set(layer[displayedStandardImage].visible, false);
+    );
+  </action>
+  <action name="applyDisplayedImageObjectAnimation">resumeautorotation(forcehotspot);
+
+    if (%1,
+      stoptween(layer[displayedStandardImage].width, layer[displayedStandardImage].height);
+      tween(layer[displayedStandardImage].width|layer[displayedStandardImage].height, 1|1, 1, easeOutQuad, WAIT);
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););removelayer(displayedStandardImage);
+    ,
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););removelayer(displayedStandardImage);
+    );
+  </action>
+  <action name="setDisplayedImageObjectParameters">
+    set(layer[displayedStandardImage].url       , %1);
+    set(layer[displayedStandardImage].align     , %2);
+    set(layer[displayedStandardImage].x         , %3);
+    set(layer[displayedStandardImage].y         , %4);
+    set(layer[displayedStandardImage].imgwidth  , %5);
+    set(layer[displayedStandardImage].imgheight , %6);
+    set(layer[displayedStandardImage].animated  , %8);
+    set(layer[displayedStandardImage].applyratio, %9);
+    set(layer[displayedStandardImage].overlay   , %10);
+    if (%7,pauseautorotation(forcehotspot);
+);
+  </action>
+  <action name="resizeDisplayedImageObject">
+    if(layer[displayedStandardImage].url,
+    set(layer[displayedStandardImage].fullwidth, get(layer[displayedStandardImage].width));
+    set(layer[displayedStandardImage].fullheight, get(layer[displayedStandardImage].height));
+    if(layer[displayedStandardImage].animated,
+      set(layer[displayedStandardImage].width , 1);
+      set(layer[displayedStandardImage].height, 1);
+    );
+    if(layer[displayedStandardImage].imgwidth != "" AND layer[displayedStandardImage].imgheight != "",
+      if(layer[displayedStandardImage].imgwidth == "prop",
+        set(tempDisplayedImageObjectHeight, get(layer[displayedStandardImage].imgheight));
+        indexoftxt(tempDisplayedImageObjectHeightPercent, get(tempDisplayedImageObjectHeight), "%");
+        if(tempDisplayedImageObjectHeightPercent GT 0,
+          txtreplace(tempDisplayedImageObjectHeight, '%', '');
+          mul(tempDisplayedImageObjectHeight, get(stageheight));
+          div(tempDisplayedImageObjectHeight, 100);
+          Math.round(tempDisplayedImageObjectHeight);
+        );
+        mul(flyingImgWidth,get(layer[displayedStandardImage].fullwidth),get(tempDisplayedImageObjectHeight));
+        div(flyingImgWidth,get(layer[displayedStandardImage].fullheight));
+        Math.round(flyingImgWidth);
+        set(layer[displayedStandardImage].imgwidth , get(flyingImgWidth));
+        set(layer[displayedStandardImage].imgheight, get(tempDisplayedImageObjectHeight));
+      ,
+        if(layer[displayedStandardImage].imgheight == "prop",
+          set(tempDisplayedImageObjectWidth, get(layer[displayedStandardImage].imgwidth));
+          indexoftxt(tempDisplayedImageObjectWidthPercent, get(tempDisplayedImageObjectWidth), "%");
+          if(tempDisplayedImageObjectWidthPercent GT 0,
+            txtreplace(tempDisplayedImageObjectWidth, '%', '');
+            mul(tempDisplayedImageObjectWidth, get(stagewidth));
+            div(tempDisplayedImageObjectWidth, 100);
+            Math.round(tempDisplayedImageObjectWidth);
+          );
+          mul(flyingImgHeight,get(layer[displayedStandardImage].fullheight),get(tempDisplayedImageObjectWidth));
+          div(flyingImgHeight,get(layer[displayedStandardImage].fullwidth));
+          Math.round(flyingImgHeight);
+          set(layer[displayedStandardImage].imgwidth , get(tempDisplayedImageObjectWidth));
+          set(layer[displayedStandardImage].imgheight , get(flyingImgHeight));
+        ,
+          set(tempDisplayedImageObjectWidth, get(layer[displayedStandardImage].imgwidth));
+          set(tempDisplayedImageObjectHeight, get(layer[displayedStandardImage].imgheight));
+          indexoftxt(tempDisplayedImageObjectWidthPercent, get(tempDisplayedImageObjectWidth), "%");
+          indexoftxt(tempDisplayedImageObjectHeightPercent, get(tempDisplayedImageObjectHeight), "%");
+          if(tempDisplayedImageObjectWidthPercent GT 0,
+            txtreplace(tempDisplayedImageObjectWidth, '%', '');
+            mul(tempDisplayedImageObjectWidth, get(stagewidth));
+            div(tempDisplayedImageObjectWidth, 100);
+            Math.round(tempDisplayedImageObjectWidth);
+          );
+          if(tempDisplayedImageObjectHeightPercent GT 0,
+            txtreplace(tempDisplayedImageObjectHeight, '%', '');
+            mul(tempDisplayedImageObjectHeight, get(stageheight));
+            div(tempDisplayedImageObjectHeight, 100);
+            Math.round(tempDisplayedImageObjectHeight);
+          );
+          set(layer[displayedStandardImage].imgwidth , get(tempDisplayedImageObjectWidth));
+          set(layer[displayedStandardImage].imgheight, get(tempDisplayedImageObjectHeight));
+        );
+      );
+    ,
+      set(layer[displayedStandardImage].imgwidth , get(layer[displayedStandardImage].fullwidth));
+      set(layer[displayedStandardImage].imgheight, get(layer[displayedStandardImage].fullheight));
+    );
+    
+    set(resizedwidth, get(layer[displayedStandardImage].imgwidth));
+    set(resizedheight, get(layer[displayedStandardImage].imgheight));
+    if(layer[displayedStandardImage].applyratio,
+      sub(resizedstagewidth, get(stagewidth), get(layer[displayedStandardImage].x));
+      sub(resizedstageheight, get(stageheight), get(layer[displayedStandardImage].y));
+      Math.abs(resizedstagewidth);
+      Math.abs(resizedstageheight);
+      if(resizedwidth GT resizedstagewidth,
+        mul(tempresizedheight, get(resizedheight), get(resizedstagewidth));
+        div(tempresizedheight, get(resizedwidth));
+        Math.round(tempresizedheight);
+        set(resizedwidth, get(resizedstagewidth));
+        set(resizedheight, get(tempresizedheight));
+      );
+      if(resizedheight GT resizedstageheight,
+        mul(tempresizedwidth, get(resizedwidth), get(resizedstageheight));
+        div(tempresizedwidth, get(resizedheight));
+        Math.round(tempresizedwidth);
+        set(resizedheight, get(resizedstageheight));
+        set(resizedwidth, get(tempresizedwidth));
+      );
+    );
+    
+    if(layer[displayedStandardImage].animated,
+      set(layer[displayedStandardImage].animated, false);
+      tween(layer[displayedStandardImage].width , get(resizedwidth), 1, easeOutQuad);
+      tween(layer[displayedStandardImage].height, get(resizedheight), 1, easeOutQuad);
+    ,
+      set(layer[displayedStandardImage].width , get(resizedwidth));
+      set(layer[displayedStandardImage].height, get(resizedheight));
+    );
+    if(layer[displayedStandardImage].overlay,set(layer[displayedStandardImageOverlay].visible, true););
+    set(layer[displayedStandardImage].visible, true);
+    ,
+      delayedcall(0.2,resizeDisplayedImageObject(););
+    );
+  </action>
+  <events name="displayedImageObjectEvents" keep="true" onremovedisplayedobject="displayedImageObjectOnRemoveDisplayedObject" onresize="if(layer[displayedStandardImage],resizeDisplayedImageObject());" />
+  <action name="displayedImageObjectOnRemoveDisplayedObject">
+    ifnot(layer[displayedStandardImage].currentCall,if(layer[displayedStandardImage].visible,resumeautorotation(forcehotspot);
+
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););
+      removelayer(displayedStandardImage);
+    ););
+  </action>
+
+
+  <!-- Fullscreen Management -->
+  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);set(fullscreen,false);</action>
+  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);set(fullscreen,true);</action>
+  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
+
+  
+  <events name="krpanoExitFullscreenEvent"
+    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
+    keep="true" />
+
+  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
+
+</krpano>
